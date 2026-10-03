@@ -1,8 +1,99 @@
-<html>
+<!DOCTYPE html>
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>o-tofu</title>
-    <!-- <script src="./index.js"></script> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>o-tofu | Profile</title>
+    <style>
+        :root {
+            color-scheme: light;
+            --bg: #f5f7fb;
+            --card: #ffffff;
+            --text: #1e2430;
+            --muted: #5b6473;
+            --accent: #3b82f6;
+            --border: #dbe3f2;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Inter", "Hiragino Sans", "Noto Sans JP", sans-serif;
+            background: linear-gradient(180deg, #eef4ff 0%, var(--bg) 100%);
+            color: var(--text);
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            padding: 24px;
+        }
+
+        main {
+            width: min(760px, 100%);
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            box-shadow: 0 12px 28px rgba(28, 44, 84, 0.08);
+            padding: 32px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: clamp(1.8rem, 3vw, 2.4rem);
+            letter-spacing: 0.02em;
+        }
+
+        .subtitle {
+            margin-top: 10px;
+            color: var(--muted);
+            font-size: 1rem;
+        }
+
+        ul {
+            margin: 24px 0 0;
+            padding: 0;
+            list-style: none;
+            display: grid;
+            gap: 12px;
+        }
+
+        li {
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 14px 16px;
+            background: #fbfcff;
+            line-height: 1.6;
+        }
+
+        strong {
+            color: var(--accent);
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
-<body>hoge</body>
+<body>
+    <main>
+        <h1>o-tofu</h1>
+        <p class="subtitle">Security Engineer / SOC Analyst</p>
+        <ul>
+            <li><strong>専門:</strong> Web / Reversing を中心としたセキュリティ</li>
+            <li><strong>開発:</strong> Rust・Python での開発と自動化</li>
+            <li><strong>業務:</strong> Splunk を活用した分析・運用</li>
+            <li><strong>経歴:</strong> 2025年4月からセキュリティエンジニアとして SOC アナリスト業務に従事</li>
+            <li><strong>資格:</strong> 情報処理安全確保支援士</li>
+            <li><strong>その他:</strong> AtCoder Algorithm 茶色</li>
+            <li><strong>Links:</strong> <a href="https://x.com/otofu7741" target="_blank" rel="noopener noreferrer">X (@otofu7741)</a> / <a href="https://atcoder.jp/users/o_tofu7741" target="_blank" rel="noopener noreferrer">AtCoder (o_tofu7741)</a></li>
+        </ul>
+    </main>
+</body>
 </html>
